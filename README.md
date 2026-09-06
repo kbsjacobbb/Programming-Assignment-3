@@ -9,3 +9,9 @@ Balagtas, Jacob T.
 ## Objective of the Experiment
 
 The objective of this experiment is to hone and develop Python skills
+
+## A. POSITIONAL AND LABEL-BASED SLICING
+
+## B. MODEL LOOKUP
+
+## C. MULTI-MODEL SUBSETTING
