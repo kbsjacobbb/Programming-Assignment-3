@@ -4,7 +4,7 @@ Balagtas, Jacob T.
 
 2ECE-B
 
-**Place Date here**
+9/10/2026
 
 ## Objective of the Experiment
 
