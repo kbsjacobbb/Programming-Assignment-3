@@ -70,5 +70,9 @@ This line of code emphasizes that the variable **models** is stating three eleme
     selected_cars = cars.loc[cars['Model'].isin(models), ['Model', 'mpg', 'cyl', 'hp', 'gear']]
     selected_cars
 
-With the help of the first code, the line **cars.loc[cars['Model'].isin(models)** filters the dataset to identify the **models** or cars being asked for. The line 
+With the help of the first code, the line **cars.loc[cars['Model'].isin(models)** filters the dataset to identify the **models** or cars being asked for. On the other hand, the line **['Model', 'mpg', 'cyl', 'hp', 'gear']** specifies what columns are to be shown with the selected cars.
 
+    print("Shape of Selected Cars: ")
+    selected_cars.shape
+
+Lastly, this line of code shows the shape of the variable **selected_cars**.
