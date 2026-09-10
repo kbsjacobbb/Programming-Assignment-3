@@ -38,7 +38,7 @@ These codes display the shape and the column names, respectively.
     cars_6_to_10 = cars.iloc[5:10]
     cars_6_to_10
 
-These lines of code display the contents of rows 6-10 in the CSV file but 5-9 in the content. The code of **cars.iloc[5:10]** selects and returns rows 5 through 9, as in this code, it will always exclude the last number.
+These lines of code display the contents of rows 6-10 in the CSV file, but 5-9 in the content. The code of **cars.iloc[5:10]** selects and returns rows 5 through 9; in this code, it will always exclude the last number.
 
     cars_6_to_10 = cars_6_to_10[['Model', 'mpg', 'cyl', 'hp', 'gear']]
     cars_6_to_10
@@ -52,11 +52,23 @@ The code emphasizes that the variable **cars_6_to_10**, which shows rows 5-9 in 
     toyota = cars[(cars['Model'] == 'Toyota Corolla')]
     toyota
 
-The code emphasizes that the variable "cars" shows the row of **Toyota Corolla** with **cars['Model']**  **Toyota Corolla**.
+The code emphasizes that the variable "cars" shows the row for **Toyota Corolla** with **cars['Model']** set to  **Toyota Corolla**.
 
     pontiac = cars[(cars['Model'] == 'Pontiac Firebird')][['Model', 'mpg', 'hp', 'wt']]
     pontiac
 
-This is similar to the first line of code, only this time, it shows only the 'Model', 'mpg', 'hp', and 'wt' of the selected car.
+This is similar to the first line of code, but this time it shows only the 'Model', 'mpg', 'hp', and 'wt' for the selected car.
 
 ## C. MULTI-MODEL SUBSETTING
+
+### Code:
+
+    models = ['Datsun 710', 'Lotus Europa', 'Ferrari Dino']
+
+This line of code emphasizes that the variable **models** is stating three elements, the 'Datsun 710', 'Lotus Europa', and 'Ferrari Dino.'
+
+    selected_cars = cars.loc[cars['Model'].isin(models), ['Model', 'mpg', 'cyl', 'hp', 'gear']]
+    selected_cars
+
+With the help of the first code, the line **cars.loc[cars['Model'].isin(models)** filters the dataset to identify the **models** or cars being asked for. The line 
+
