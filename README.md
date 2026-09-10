@@ -18,9 +18,11 @@ The code above is a Python command that imports the **pandas** library and uses 
 
     cars = pd.read_csv('cars.csv')
 
-The code above is used to read the imported CSV file. The name of "cars" is the assigned variable, **pd.read_csv** is the command used to read the CSV file, and **cars.csv** is the CSV file being read.
+The code above reads the imported CSV file. The name of "cars" is the assigned variable, **pd.read_csv** is the command used to read the CSV file, and **cars.csv** is the CSV file being read.
 
 ## A. POSITIONAL AND LABEL-BASED SLICING
+
+This activity shows how **positional slicing** works by extracting a subset of data based on its numerical position.
 
 ### Code:
 
@@ -47,12 +49,14 @@ The code emphasizes that the variable **cars_6_to_10**, which shows rows 5-9 in 
 
 ## B. MODEL LOOKUP
 
+This activity demonstrates how **boolean indexing** works by filtering data using logical conditions.
+
 ### Code:
 
     toyota = cars[(cars['Model'] == 'Toyota Corolla')]
     toyota
 
-The code emphasizes that the variable "cars" shows the row for **Toyota Corolla** with **cars['Model']** set to  **Toyota Corolla**.
+The code emphasizes that the variable "cars" points to the row for **Toyota Corolla**, with **cars['Model']** set to  **Toyota Corolla**.
 
     pontiac = cars[(cars['Model'] == 'Pontiac Firebird')][['Model', 'mpg', 'hp', 'wt']]
     pontiac
@@ -60,6 +64,8 @@ The code emphasizes that the variable "cars" shows the row for **Toyota Corolla*
 This is similar to the first line of code, but this time it shows only the 'Model', 'mpg', 'hp', and 'wt' for the selected car.
 
 ## C. MULTI-MODEL SUBSETTING
+
+This activity demonstrates how multi-condition subsetting works. Just like Activity B, it filters data, but this time, by its values or labels.
 
 ### Code:
 
