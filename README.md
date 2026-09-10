@@ -52,6 +52,11 @@ The code emphasizes that the variable **cars_6_to_10**, which shows rows 5-9 in 
     toyota = cars[(cars['Model'] == 'Toyota Corolla')]
     toyota
 
-This line of code only shows the content of the **Toyota Corolla**. 
+The code emphasizes that the variable "cars" shows the row of **Toyota Corolla** with **cars['Model']**  **Toyota Corolla**.
+
+    pontiac = cars[(cars['Model'] == 'Pontiac Firebird')][['Model', 'mpg', 'hp', 'wt']]
+    pontiac
+
+This is similar to the first line of code, only this time, it shows only the 'Model', 'mpg', 'hp', and 'wt' of the selected car.
 
 ## C. MULTI-MODEL SUBSETTING
